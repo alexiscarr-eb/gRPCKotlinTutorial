@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.eventbrite.grpckotlintutorial;
+
+option java_multiple_files = true;
+option java_package = "com.eventbrite.grpckotlintutorial.proto";
+option java_outer_classname = "ExampleProto";
+
+service ExampleService {
+  rpc HelloWorld (HelloWorldRequest) returns (HelloWorldResponse) {}
+}
+
+message HelloWorldRequest {}
+
+message HelloWorldResponse {}
